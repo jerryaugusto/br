@@ -1,10 +1,10 @@
 /**
- * Fonts
+ * Fonts.
  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /**
- * Variables
+ * Variables.
  */
 :root {
   /* Resizing font. Now 1rem = 10px */
@@ -12,10 +12,10 @@
 
   --header-height: 4.8rem;
 
-  /** Colors **/
+  /** Colors. **/
   --hue-color: 254; /* Pink: 330 / Purple: 250 / Blue: 170 / Green: 115 / Yellow: 60 / Orange: 35 / Red: 10 */
 
-  /* HSL color mode */
+  /* HSL color mode. */
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -38,7 +38,7 @@
   --small-font-size: 1.3rem;
   --smaller-font-size: 1.2rem;
 
-  /* Font weight */
+  /* Font weight. */
   --font-medium: 500;
   --font-semi-bold: 600;
 
@@ -59,7 +59,7 @@
 }
 
 /**
- * Font size for large devices
+ * Font size for large devices.
  */
 @media screen and (min-width: 968px) {
   :root {
@@ -74,7 +74,7 @@
 }
 
 /**
- * Base
+ * Base.
  */
 * {
   box-sizing: border-box;
@@ -116,7 +116,7 @@ img {
 }
 
 /**
- * Reusable CSS classes
+ * Reusable CSS classes.
  */
 .section {
   padding: 3.2rem 0 6.4rem;
@@ -138,7 +138,7 @@ img {
 }
 
 /**
- * Layout
+ * Layout.
  */
 .container {
   max-width: 768px;
@@ -161,7 +161,7 @@ img {
 }
 
 /**
- * Nav
+ * Nav.
  */
 .nav {
   max-width: 968px;
@@ -245,7 +245,7 @@ img {
 }
 
 /**
- * Home
+ * Home.
  */
 .home__container {
   gap: 1.6rem;
@@ -328,7 +328,7 @@ img {
   font-size: 2rem;
 }
 
-/** Buttons **/
+/** Buttons. **/
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -339,7 +339,7 @@ img {
 }
 
 .button:hover {
-  color: var(--first-color-alt);
+  background-color: var(--first-color-alt);
 }
 
 .button__icon {
@@ -369,7 +369,7 @@ img {
 }
 
 /**
- * About
+ * About.
  */
 .about__img {
   width: 200px;
@@ -411,7 +411,7 @@ img {
 }
 
 /**
- * Skills
+ * Skills.
  */
 .skills__container {
   row-gap: 0;
@@ -566,7 +566,7 @@ img {
 }
 
 /**
- * Qualification
+ * Qualification.
  */
 .qualification__tabs {
   display: flex;
@@ -640,7 +640,7 @@ img {
 }
 
 /**
- * Services
+ * Services.
  */
 .services__container {
   gap: 2.4rem;
@@ -734,8 +734,71 @@ img {
   margin-right: var(--mb-4);
 }
 
-/* Active modal */
+/* Active modal. */
 .active-modal {
   opacity: 1;
   visibility: visible;
+}
+
+/**
+ * Portfolio.
+ */
+.portfolio__container {
+  overflow: initial;
+}
+
+.portfolio__content {
+  padding: 0 2.4rem;
+}
+
+.portfolio__img {
+  width: calc(265px + 37.5%);
+  border-radius: 0.8rem;
+  justify-content: center;
+}
+
+.portfolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-8);
+}
+
+.portfolio__description {
+  margin-bottom: var(--mb-12);
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(0.4rem);
+}
+
+/* Swiper. */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-portfolio-icon {
+  font-size: 3.2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -0.8rem;
+}
+
+.swiper-button-next {
+  right: -0.8rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -4rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
 }
