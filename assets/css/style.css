@@ -244,6 +244,10 @@ img {
   bottom: 0;
 }
 
+.active-link {
+  color: var(--first-color);
+}
+
 /**
  * Home.
  */
@@ -893,4 +897,62 @@ img {
   border: none;
   outline: none;
   padding: 0.4 0.8 0.8 0;
+}
+
+/**
+ * Footer.
+ */
+.footer {
+  padding-top: 3.2rem;
+}
+
+.footer__container {
+  row-gap: 5.6rem;
+}
+
+.footer__bg {
+  background-color: var(--first-color-second);
+  padding: 3.2rem 0 4.8rem;
+}
+
+.footer__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-4);
+}
+
+.footer__subtitle {
+  font-size: var(--small-font-size);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+}
+
+.footer__link:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer__social {
+  font-size: 2rem;
+  margin-right: var(--mb-24);
+}
+
+.footer__social:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--mb-48);
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social {
+  color: #f8f8f2;
 }
